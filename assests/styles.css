@@ -404,3 +404,40 @@ ul {
     transform: perspective(800px) rotateX(0deg);
 }
 
+/* Contact us page css */
+
+.contactinfo {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    width: 584px;
+}
+
+.contactinfoinfo {
+    width: 281px;
+    min-height: 134px;
+}
+
+.contacthero1 h1 {
+    margin-bottom: 12px;
+}
+.contactinfo h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.contactinfo p {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.contacthero2 {
+    width: 487px;
+    min-height:50px;
+    margin-bottom: 96px;
+}
+
+.contactmain {
+    margin-top: 96px;
+}

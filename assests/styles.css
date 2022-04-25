@@ -228,6 +228,7 @@ p {
     background-color: #1E1E1E;
     padding: 64px;
     padding-bottom: 84px;
+    margin-top: 48px;
     margin-bottom: 144px;
 }
 
@@ -315,14 +316,17 @@ ul {
 
 .abouthero {
     /* image properties */
-    background-image: url(images/HQ+landscape+ducks+dawn.jpeg);
     background-color: #F9FBFF;
-    height: 1000px;
+    background-image: url(images/HQ+landscape+ducks+dawn.jpeg); /*fallback */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(180deg, rgba(18, 18, 18, 0) 18%, rgba(18, 18, 18, 1) 95%), url(images/HQ+landscape+ducks+dawn.jpeg);
+    background-blend-mode: multiply, normal, normal;
+    height: 840px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     padding: 81px 243px;
+    margin-bottom: 96px;
 }
 
 .abouthero h1 {
@@ -333,3 +337,33 @@ ul {
     line-height: 3.875rem;
     margin-bottom: 60px;
 }
+
+.theader {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tcard h3 {
+    background-color: #1E1E1E;
+    color: #F9FBFF;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    padding-top: 140px;
+    box-sizing: border-box;
+    height: 400px;
+    width: 300px;
+    margin-right: 1px;
+    margin-bottom: 48px;
+}
+
+/* Transform into flip cards, so tcards turn over and reveal info about the person */
